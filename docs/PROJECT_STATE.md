@@ -1,45 +1,44 @@
-# Castles_6Jun Project State - Session Resume
+# Castles Kailua Surf Dashboard - Project State
 
-**Session ID:** `20260609_214939_lukas`  
-**Last Updated:** June 9, 2026, 22:00 (HST)  
-**Status:** Dashboard Built, Data Fetching Operational.
+**Last Updated:** June 13, 2026, 18:30 (HST)  
+**Primary Repo:** `/home/mebuntu/repos/castles_1/`
+**Live URL:** [https://lukasfiller.com](https://lukasfiller.com)
 
 ## 🎯 Project Overview
-Build a web-based surfing conditions dashboard for Novato Creek surf spot, visualizing real-time NOAA buoy 51202 (Mokapu Point, Hawaii) wave data with a historical "Good Conditions" reference line threshold.
+Web-based surfing dashboard for Castles, Kailua. Visualizes real-time NOAA buoy 51202 data (Mokapu Point) across 5 dimensions with historical "Good Condition" baselines.
 
-## 📍 Workspace Location
-- **WSL:** `/mnt/d/Coding/castles_6jun/`
-- **Windows:** `D:\Coding\castles_6jun`
-
-## 📁 Directory Structure
+## 📁 Native Repo Structure
 ```
-castles_6jun/
-├── GEMINI.md                     # Project Instructions
-├── CLAUDE.md                     # Hermes Instructions
-├── docs/PROJECT_STATE.md        # This file
-├── docs/PROJECT_SPECIFICATION.md
-├── code/                         # Frontend files (index.html, data.json)
-├── scripts/                      # fetch_noaa.py
-├── venv/                         # Python virtual environment
-└── tests/                        # Tests
+castles_1/
+├── .github/workflows/   # Automated hourly data updates
+├── docs/                # Project documentation
+├── scripts/             # fetch_noaa.py
+├── venv/                # Native WSL2 Python environment
+├── index.html           # Main dashboard (root for GH Pages)
+├── dashboard.js         # Logic & Chart.js config
+├── data.json            # Latest buoy observations
+└── CNAME                # Custom domain configuration
 ```
 
 ## ✅ Completed Milestones
-1. 🐍 **Python Environment:** Created venv with `requests`, `beautifulsoup4`, `pandas`.
-2. 🌊 **Data Scraper:** Built `scripts/fetch_noaa.py` to extract Table #5 (Previous Observations) from NDBC 51202.
-3. 📊 **Dashboard:** Built `code/index.html` using Chart.js.
-   - **Colors:** Red (Wave Height), Blue (2.0 ft Threshold).
-   - **Threshold:** 2.0 ft "Good Floor" confirmed.
-4. 🌐 **Local Server:** Dashboard running at `http://localhost:8080`.
+1. 🏗️ **Migration:** Moved project from `/mnt/d/` to native WSL2 (`/home/mebuntu/repos/castles_1/`) for 10x I/O performance.
+2. 📊 **Multi-Metric Dashboard:** Expanded from Wave Height only to 5-factor analysis:
+   - **WVHT** (8.06' avg), **SwH** (3.5' avg), **SwP** (12.74s avg), **WWH** (7.1' avg), **WWP** (8.63s avg).
+   - Added horizontal blue dashed lines for each baseline.
+3. 🚥 **Live Status Indicator:** Added banner that turns green only when all 5 factors meet the baseline.
+4. 🤖 **GitHub Automation:**
+   - Created private repo: `loni415/castles_1`.
+   - Setup GitHub Actions for hourly `fetch_noaa.py` execution and auto-commit.
+5. 🌐 **Custom Domain:** Configured `lukasfiller.com` via GitHub Pages and CNAME.
 
 ## 🎯 Next Steps
-1. 🔄 **Auto-Refresh:** Set up a cron job or script to run `fetch_noaa.py` every 30 minutes.
-2. 🔗 **Public Access:** Set up ngrok to share the dashboard with neighbors.
-3. 🏄 **Visuals:** Add more "Lukas-style" icons or simple labels if needed.
+1. 🛠️ **DNS Finalization:** User to add A and CNAME records at GoDaddy.
+2. 🔒 **HTTPS:** Enable "Enforce HTTPS" in GitHub Pages settings after DNS propagation.
+3. 📱 **Mobile Tweaks:** Ensure the grid layout holds up on small screens.
 
 ---
 
 **💾 Saved to:**
-- File: `castles_6jun/docs/PROJECT_STATE.md` ✅
-- memPalace: `/home/mebuntu/.mempalace/palace` (via MCP) ✅
-- mem0: `localhost:8888/v1/search` ⏳
+- Local: `docs/PROJECT_STATE.md` ✅
+- GitHub: `main` branch ✅
+- memPalace: `castles_6jun` wing ✅
