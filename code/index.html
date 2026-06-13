@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novato Creek Surf Dash</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #f4f7f6; 
+            margin: 0; 
+            padding: 20px;
+        }
+        .container { 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+        }
+        .chart-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .chart-title {
+            font-weight: bold;
+            color: #34495e;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .threshold-label { font-weight: bold; color: blue; }
+        .current-label { font-weight: bold; color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏄 Castles Kailua Surf Dashboard</h1>
+        <div class="info">Buoy 51202 - Mokapu Point, Hawaii</div>
+        
+        <div class="legend">
+            <div><span class="current-label">──</span> Current Condition</div>
+            <div><span class="threshold-label">--</span> Baseline Good Threshold</div>
+        </div>
+
+        <div id="status-indicator" style="text-align: center; padding: 15px; margin-bottom: 25px; border-radius: 12px; font-weight: bold; font-size: 1.4em; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            Checking conditions...
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="chart-card">
+                <div class="chart-title">Significant Wave Height (WVHT) <span>ft</span></div>
+                <canvas id="chart-WVHT"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Swell Height (SwH) <span>ft</span></div>
+                <canvas id="chart-SwH"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Swell Period (SwP) <span>sec</span></div>
+                <canvas id="chart-SwP"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Wind Wave Height (WWH) <span>ft</span></div>
+                <canvas id="chart-WWH"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Wind Wave Period (WWP) <span>sec</span></div>
+                <canvas id="chart-WWP"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
+>

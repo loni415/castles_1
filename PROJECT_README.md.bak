@@ -1,0 +1,28 @@
+# 🏖️ castles_1 - Surfing Dashboard
+
+## Quick Start
+
+**Location:** `/home/mebuntu/repos/castles_1/`
+
+**Data Source:** NOAA buoy 51202 (Mokapu Point, Hawaii)
+
+---
+
+## Current Setup
+
+All files save WSL at: `/home/mebuntu/repos/castles_1/`
+
+**Not using** `/mnt/g/obsidian` → read-only permissions.
+
+---
+
+## Next Steps
+
+1. Confirm "Good Conditions" threshold  
+2. Build HTML dashboard protptype  
+3. Run on ngrok  
+4. Share with neighbors  
+
+---
+
+**Status:** Ready to start building!
