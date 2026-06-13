@@ -10,8 +10,9 @@
 - **Data Source**: Always use NDBC Station 51202 Table #5.
 - **Chart Colors**: Red (Current), Blue (Baseline Threshold).
 - **Core Metrics**: WVHT, SwH, SwP, WWH, WWP.
-- **Baselines (Good avg)**: 
+- **Baselines (Empirical Good Avg)**: 
   - WVHT: 8.06' | SwH: 3.5' | SwP: 12.74s | WWH: 7.1' | WWP: 8.63s
+  - Note: 2.0ft is NOT the "Good" threshold; use the calculated averages.
 
 ## Tooling
 - `scripts/fetch_noaa.py`: Scraper.
