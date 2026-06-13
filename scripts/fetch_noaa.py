@@ -52,12 +52,8 @@ def fetch_data():
                     item[headers[i]] = val
                 data.append(item)
         
-        # Ensure the 'code' directory exists
-        code_dir = os.path.join(os.path.dirname(__file__), '../code')
-        if not os.path.exists(code_dir):
-            os.makedirs(code_dir)
-            
-        output_path = os.path.join(code_dir, 'data.json')
+        # Ensure the output directory exists (now root)
+        output_path = os.path.join(os.path.dirname(__file__), '../data.json')
         with open(output_path, 'w') as f:
             json.dump(data, f, indent=2)
         
