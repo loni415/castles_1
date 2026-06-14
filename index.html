@@ -57,6 +57,14 @@
         }
         .threshold-label { font-weight: bold; color: blue; }
         .current-label { font-weight: bold; color: red; }
+        .description {
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+            text-align: center;
+            line-height: 1.6;
+            color: #555;
+            font-size: 0.95em;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +76,8 @@
             <div><span class="current-label">──</span> Current Condition</div>
             <div><span class="threshold-label">--</span> Baseline Good Threshold</div>
         </div>
+
+        <p class="description">The dashed blue lines represent historically 'good' surfing conditions at Castles. This baseline is the average of buoy data collected during past sessions when the surf was decent. While multiple metrics should align with these lines for promising conditions, this baseline has proven to be a reliable indicator of when it's worth checking the break in person.</p>
 
         <div id="status-indicator" style="text-align: center; padding: 15px; margin-bottom: 25px; border-radius: 12px; font-weight: bold; font-size: 1.4em; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
             Checking conditions...
