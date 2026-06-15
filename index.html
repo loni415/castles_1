@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castles Kailua Surf Dashboard</title>
+    <title>Castles Kailua Surf Dashboard | Live Surf Conditions & Buoy Data</title>
+    <meta name="description" content="Real-time NOAA buoy data and surf condition metrics for Castles reef break in Kailua, Hawaii. Track wave height, swell period, and wind conditions.">
+    <link rel="canonical" href="https://lukasfiller.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lukasfiller.com/">
+    <meta property="og:title" content="Castles Kailua Surf Dashboard | Live Surf Conditions">
+    <meta property="og:description" content="Real-time NOAA buoy data and surf condition metrics for Castles reef break in Kailua, Hawaii.">
+    <meta property="og:image" content="https://lukasfiller.com/resources/remote-wsl.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lukasfiller.com/">
+    <meta property="twitter:title" content="Castles Kailua Surf Dashboard | Live Surf Conditions">
+    <meta property="twitter:description" content="Real-time NOAA buoy data and surf condition metrics for Castles reef break in Kailua, Hawaii.">
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { 
@@ -68,9 +84,11 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🏄 Castles Kailua Surf Dashboard</h1>
-        <div class="info">Buoy 51202 - Mokapu Point, Hawaii</div>
+    <main class="container">
+        <header>
+            <h1>🏄 Castles Kailua Surf Dashboard</h1>
+            <div class="info">Buoy 51202 - Mokapu Point, Hawaii</div>
+        </header>
         
         <div class="legend">
             <div><span class="current-label">──</span> Current Condition</div>
@@ -83,29 +101,29 @@
             Checking conditions...
         </div>
 
-        <div class="dashboard-grid">
-            <div class="chart-card">
+        <section class="dashboard-grid">
+            <article class="chart-card">
                 <div class="chart-title">Significant Wave Height (WVHT) <span>ft</span></div>
                 <canvas id="chart-WVHT"></canvas>
-            </div>
-            <div class="chart-card">
+            </article>
+            <article class="chart-card">
                 <div class="chart-title">Swell Height (SwH) <span>ft</span></div>
                 <canvas id="chart-SwH"></canvas>
-            </div>
-            <div class="chart-card">
+            </article>
+            <article class="chart-card">
                 <div class="chart-title">Swell Period (SwP) <span>sec</span></div>
                 <canvas id="chart-SwP"></canvas>
-            </div>
-            <div class="chart-card">
+            </article>
+            <article class="chart-card">
                 <div class="chart-title">Wind Wave Height (WWH) <span>ft</span></div>
                 <canvas id="chart-WWH"></canvas>
-            </div>
-            <div class="chart-card">
+            </article>
+            <article class="chart-card">
                 <div class="chart-title">Wind Wave Period (WWP) <span>sec</span></div>
                 <canvas id="chart-WWP"></canvas>
-            </div>
-        </div>
-    </div>
+            </article>
+        </section>
+    </main>
 
     <script src="dashboard.js"></script>
 </body>
