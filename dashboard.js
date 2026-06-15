@@ -42,27 +42,47 @@ async function fetchDataAndRender() {
 function updateStatus(latest) {
     const statusEl = document.getElementById('status-indicator');
     const metrics = {
-        WVHT: parseFloat(latest["WVHTft"]),
-        SwH: parseFloat(latest["SwHft"]),
-        SwP: parseFloat(latest["SwPsec"]),
-        WWH: parseFloat(latest["WWHft"]),
-        WWP: parseFloat(latest["WWPsec"])
+        WVHT: { val: parseFloat(latest["WVHTft"]), label: "WVHT", unit: "ft" },
+        SwH: { val: parseFloat(latest["SwHft"]), label: "SwH", unit: "ft" },
+        SwP: { val: parseFloat(latest["SwPsec"]), label: "SwP", unit: "s" },
+        WWH: { val: parseFloat(latest["WWHft"]), label: "WWH", unit: "ft" },
+        WWP: { val: parseFloat(latest["WWPsec"]), label: "WWP", unit: "s" }
     };
 
-    const isGood = Object.keys(THRESHOLDS).every(key => metrics[key] >= THRESHOLDS[key]);
+    const isGood = Object.keys(THRESHOLDS).every(key => metrics[key].val >= THRESHOLDS[key]);
 
+    let html = "";
     if (isGood) {
-        statusEl.textContent = "🚀 GOOD CONDITIONS DETECTED";
-        statusEl.style.backgroundColor = "#d4edda";
-        statusEl.style.color = "#155724";
-        statusEl.style.border = "2px solid #c3e6cb";
+        statusEl.style.backgroundColor = "#e8f5e9";
+        statusEl.style.color = "#2e7d32";
+        statusEl.style.border = "2px solid #a5d6a7";
+        html += `<div style="margin-bottom: 15px;">🚀 GOOD CONDITIONS DETECTED</div>`;
     } else {
-        const failing = Object.keys(THRESHOLDS).filter(key => metrics[key] < THRESHOLDS[key]);
-        statusEl.textContent = "⏳ SUB-OPTIMAL (" + failing.join(', ') + " below baseline)";
-        statusEl.style.backgroundColor = "#fff3cd";
-        statusEl.style.color = "#856404";
-        statusEl.style.border = "2px solid #ffeeba";
+        statusEl.style.backgroundColor = "#fffde7";
+        statusEl.style.color = "#f57f17";
+        statusEl.style.border = "2px solid #fff59d";
+        html += `<div style="margin-bottom: 15px;">⏳ SUB-OPTIMAL CONDITIONS DETECTED</div>`;
     }
+
+    html += `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-size: 0.55em; font-weight: normal; color: #333;">`;
+    
+    Object.keys(THRESHOLDS).forEach(key => {
+        const met = metrics[key];
+        const thresh = THRESHOLDS[key];
+        const passed = met.val >= thresh;
+        const color = passed ? "#2e7d32" : "#c62828";
+        const icon = passed ? "✓" : "✗";
+        html += `
+            <div style="background: rgba(255,255,255,0.75); padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05); text-align: center; min-width: 150px;">
+                <span style="font-weight: bold; color: ${color};">${icon} ${key}</span><br/>
+                <span style="font-size: 1.25em; font-weight: bold; color: ${color};">${met.val}${met.unit}</span>
+                <span style="color: #666; font-size: 0.9em;">(min ${thresh}${met.unit})</span>
+            </div>
+        `;
+    });
+
+    html += `</div>`;
+    statusEl.innerHTML = html;
 }
 
 function renderChart(elementId, labels, dataPoints, thresholdValue, label) {
