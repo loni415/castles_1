@@ -1,5 +1,65 @@
 [
   {
+    "TIME(HST)": "2026-06-19 11:56 pm",
+    "WVHTft": "3.9",
+    "SwHft": "1.3",
+    "SwPsec": "14.3",
+    "SwD": "SE",
+    "WWHft": "3.9",
+    "WWPsec": "4.8",
+    "WWD": "E",
+    "STEEPNESS": "AVERAGE",
+    "APDsec": "5.0"
+  },
+  {
+    "TIME(HST)": "2026-06-19 11:26 pm",
+    "WVHTft": "3.9",
+    "SwHft": "1.3",
+    "SwPsec": "14.3",
+    "SwD": "SE",
+    "WWHft": "3.9",
+    "WWPsec": "5.3",
+    "WWD": "E",
+    "STEEPNESS": "VERY_STEEP",
+    "APDsec": "5.1"
+  },
+  {
+    "TIME(HST)": "2026-06-19 10:56 pm",
+    "WVHTft": "3.9",
+    "SwHft": "1.3",
+    "SwPsec": "14.3",
+    "SwD": "SE",
+    "WWHft": "3.6",
+    "WWPsec": "6.2",
+    "WWD": "E",
+    "STEEPNESS": "AVERAGE",
+    "APDsec": "5.1"
+  },
+  {
+    "TIME(HST)": "2026-06-19 10:26 pm",
+    "WVHTft": "3.9",
+    "SwHft": "1.3",
+    "SwPsec": "13.3",
+    "SwD": "SE",
+    "WWHft": "3.6",
+    "WWPsec": "5.9",
+    "WWD": "E",
+    "STEEPNESS": "AVERAGE",
+    "APDsec": "5.0"
+  },
+  {
+    "TIME(HST)": "2026-06-19 09:56 pm",
+    "WVHTft": "3.9",
+    "SwHft": "1.3",
+    "SwPsec": "13.3",
+    "SwD": "SSE",
+    "WWHft": "3.6",
+    "WWPsec": "5.9",
+    "WWD": "ENE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "4.9"
+  },
+  {
     "TIME(HST)": "2026-06-19 09:26 pm",
     "WVHTft": "3.9",
     "SwHft": "1.6",
@@ -526,53 +586,5 @@
     "WWD": "ENE",
     "STEEPNESS": "STEEP",
     "APDsec": "5.3"
-  },
-  {
-    "TIME(HST)": "2026-06-18 11:26 pm",
-    "WVHTft": "3.9",
-    "SwHft": "2.0",
-    "SwPsec": "15.4",
-    "SwD": "SE",
-    "WWHft": "3.3",
-    "WWPsec": "6.2",
-    "WWD": "ENE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.5"
-  },
-  {
-    "TIME(HST)": "2026-06-18 10:56 pm",
-    "WVHTft": "3.9",
-    "SwHft": "2.0",
-    "SwPsec": "13.3",
-    "SwD": "SE",
-    "WWHft": "3.6",
-    "WWPsec": "9.1",
-    "WWD": "ENE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.8"
-  },
-  {
-    "TIME(HST)": "2026-06-18 10:26 pm",
-    "WVHTft": "3.9",
-    "SwHft": "1.6",
-    "SwPsec": "13.3",
-    "SwD": "SE",
-    "WWHft": "3.6",
-    "WWPsec": "5.9",
-    "WWD": "ENE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.5"
-  },
-  {
-    "TIME(HST)": "2026-06-18 09:56 pm",
-    "WVHTft": "3.9",
-    "SwHft": "2.0",
-    "SwPsec": "14.3",
-    "SwD": "SE",
-    "WWHft": "3.6",
-    "WWPsec": "9.1",
-    "WWD": "ENE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.6"
   }
 ]
