@@ -1,5 +1,41 @@
 [
   {
+    "TIME(HST)": "2026-07-16 08:26 am",
+    "WVHTft": "4.6",
+    "SwHft": "0.7",
+    "SwPsec": "11.1",
+    "SwD": "E",
+    "WWHft": "4.6",
+    "WWPsec": "6.7",
+    "WWD": "NE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.2"
+  },
+  {
+    "TIME(HST)": "2026-07-16 07:56 am",
+    "WVHTft": "4.9",
+    "SwHft": "0.7",
+    "SwPsec": "14.3",
+    "SwD": "ENE",
+    "WWHft": "4.9",
+    "WWPsec": "7.7",
+    "WWD": "NE",
+    "STEEPNESS": "AVERAGE",
+    "APDsec": "5.2"
+  },
+  {
+    "TIME(HST)": "2026-07-16 07:26 am",
+    "WVHTft": "4.9",
+    "SwHft": "0.7",
+    "SwPsec": "11.8",
+    "SwD": "ESE",
+    "WWHft": "4.9",
+    "WWPsec": "7.1",
+    "WWD": "NE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.1"
+  },
+  {
     "TIME(HST)": "2026-07-16 06:56 am",
     "WVHTft": "4.6",
     "SwHft": "0.7",
@@ -537,30 +573,6 @@
     "WWPsec": "7.7",
     "WWD": "NE",
     "STEEPNESS": "AVERAGE",
-    "APDsec": "5.6"
-  },
-  {
-    "TIME(HST)": "2026-07-15 08:26 am",
-    "WVHTft": "4.3",
-    "SwHft": "0.7",
-    "SwPsec": "11.1",
-    "SwD": "ESE",
-    "WWHft": "4.3",
-    "WWPsec": "7.7",
-    "WWD": "NE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.5"
-  },
-  {
-    "TIME(HST)": "2026-07-15 07:56 am",
-    "WVHTft": "4.6",
-    "SwHft": "0.7",
-    "SwPsec": "12.5",
-    "SwD": "SE",
-    "WWHft": "4.6",
-    "WWPsec": "7.1",
-    "WWD": "NE",
-    "STEEPNESS": "STEEP",
     "APDsec": "5.6"
   }
 ]
