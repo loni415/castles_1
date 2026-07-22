@@ -1,5 +1,53 @@
 [
   {
+    "TIME(HST)": "2026-07-22 06:26 am",
+    "WVHTft": "6.2",
+    "SwHft": "2.3",
+    "SwPsec": "13.3",
+    "SwD": "ESE",
+    "WWHft": "5.9",
+    "WWPsec": "6.7",
+    "WWD": "ENE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.9"
+  },
+  {
+    "TIME(HST)": "2026-07-22 05:56 am",
+    "WVHTft": "6.6",
+    "SwHft": "2.0",
+    "SwPsec": "12.5",
+    "SwD": "ESE",
+    "WWHft": "6.2",
+    "WWPsec": "7.1",
+    "WWD": "ENE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.8"
+  },
+  {
+    "TIME(HST)": "2026-07-22 05:26 am",
+    "WVHTft": "5.9",
+    "SwHft": "2.3",
+    "SwPsec": "14.3",
+    "SwD": "SE",
+    "WWHft": "5.6",
+    "WWPsec": "7.1",
+    "WWD": "NE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.7"
+  },
+  {
+    "TIME(HST)": "2026-07-22 04:56 am",
+    "WVHTft": "5.9",
+    "SwHft": "2.0",
+    "SwPsec": "14.3",
+    "SwD": "ESE",
+    "WWHft": "5.9",
+    "WWPsec": "7.1",
+    "WWD": "ENE",
+    "STEEPNESS": "STEEP",
+    "APDsec": "5.6"
+  },
+  {
     "TIME(HST)": "2026-07-22 04:26 am",
     "WVHTft": "6.2",
     "SwHft": "2.0",
@@ -526,53 +574,5 @@
     "WWD": "NE",
     "STEEPNESS": "STEEP",
     "APDsec": "5.5"
-  },
-  {
-    "TIME(HST)": "2026-07-21 06:26 am",
-    "WVHTft": "5.9",
-    "SwHft": "2.0",
-    "SwPsec": "12.5",
-    "SwD": "SE",
-    "WWHft": "5.6",
-    "WWPsec": "7.7",
-    "WWD": "ENE",
-    "STEEPNESS": "STEEP",
-    "APDsec": "5.5"
-  },
-  {
-    "TIME(HST)": "2026-07-21 05:56 am",
-    "WVHTft": "5.9",
-    "SwHft": "2.0",
-    "SwPsec": "14.3",
-    "SwD": "SE",
-    "WWHft": "5.6",
-    "WWPsec": "7.7",
-    "WWD": "ENE",
-    "STEEPNESS": "STEEP",
-    "APDsec": "5.9"
-  },
-  {
-    "TIME(HST)": "2026-07-21 05:26 am",
-    "WVHTft": "5.2",
-    "SwHft": "2.0",
-    "SwPsec": "16.7",
-    "SwD": "SE",
-    "WWHft": "4.9",
-    "WWPsec": "8.3",
-    "WWD": "NE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "5.9"
-  },
-  {
-    "TIME(HST)": "2026-07-21 04:56 am",
-    "WVHTft": "6.2",
-    "SwHft": "2.0",
-    "SwPsec": "14.3",
-    "SwD": "ESE",
-    "WWHft": "5.9",
-    "WWPsec": "8.3",
-    "WWD": "ENE",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "6.1"
   }
 ]
