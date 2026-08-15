@@ -562,29 +562,5 @@
     "WWD": "E",
     "STEEPNESS": "STEEP",
     "APDsec": "5.9"
-  },
-  {
-    "TIME(HST)": "2026-08-14 12:26 am",
-    "WVHTft": "6.6",
-    "SwHft": "1.6",
-    "SwPsec": "15.4",
-    "SwD": "SE",
-    "WWHft": "6.2",
-    "WWPsec": "8.3",
-    "WWD": "E",
-    "STEEPNESS": "AVERAGE",
-    "APDsec": "6.0"
-  },
-  {
-    "TIME(HST)": "2026-08-13 11:56 pm",
-    "WVHTft": "6.6",
-    "SwHft": "1.6",
-    "SwPsec": "15.4",
-    "SwD": "SE",
-    "WWHft": "6.2",
-    "WWPsec": "7.7",
-    "WWD": "ENE",
-    "STEEPNESS": "STEEP",
-    "APDsec": "5.9"
   }
 ]
