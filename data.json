@@ -1,5 +1,17 @@
 [
   {
+    "TIME(HST)": "2026-08-15 06:56 pm",
+    "WVHTft": "11.8",
+    "SwHft": "4.9",
+    "SwPsec": "11.1",
+    "SwD": "E",
+    "WWHft": "10.8",
+    "WWPsec": "9.1",
+    "WWD": "ENE",
+    "STEEPNESS": "AVERAGE",
+    "APDsec": "7.0"
+  },
+  {
     "TIME(HST)": "2026-08-15 06:26 pm",
     "WVHTft": "11.2",
     "SwHft": "4.3",
